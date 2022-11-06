@@ -10,17 +10,10 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        try{
-            Parent root = FXMLLoader.load(getClass().getResource("bul.fxml"));
-            Scene scene = new Scene(root);
-            String css = this.getClass().getResource("style.css").toExternalForm();
-            scene.getStylesheets().add(css);
+         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("bul.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setTitle("Погода");
+            stage.setScene(scene);
             stage.show();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-    public static void main(String[] args) {
-        launch();
-    }
+}
 }
