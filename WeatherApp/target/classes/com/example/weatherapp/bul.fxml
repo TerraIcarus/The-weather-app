@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.Shadow?>
@@ -35,7 +36,7 @@
                   <Image url="@../../../../../../../../../../FX/src/main/resources/com/example/fx/Minsk.png" />
                </image>
             </ImageView>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="678.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1243.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="678.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1245.0">
                <fill>
                   <LinearGradient endX="1.0" endY="1.0" startX="1.0">
                      <stops>
@@ -181,7 +182,7 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <Label layoutX="701.0" layoutY="41.0" text="27.10">
+            <Label fx:id="Data_Tek" layoutX="701.0" layoutY="41.0" text="27.10">
                <textFill>
                   <LinearGradient endX="1.0" endY="0.5165876777251185" startX="1.0" startY="0.8909952606635071">
                      <stops>
@@ -207,44 +208,39 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="534.0" layoutY="103.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temper_Tek" layoutX="534.0" layoutY="103.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial" size="60.0" />
                </font>
             </Label>
-            <Label layoutX="632.0" layoutY="110.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den" layoutX="632.0" layoutY="110.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
             </Label>
             <Line endX="-12.0" endY="-19.000015258789062" layoutX="621.0" layoutY="180.0" startX="-12.0" startY="-68.33332824707031" stroke="#397a9633" strokeWidth="3.0" />
-            <Label layoutX="632.0" layoutY="140.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt" layoutX="632.0" layoutY="140.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
             </Label>
-            <ComboBox fx:id="spisokV" layoutX="-7.0" layoutY="51.0" onAction="#onHelloButtonClick" prefHeight="35.0" prefWidth="189.0" style="-fx-background-color: D8EFF2;" />
-            <Label layoutX="55.0" layoutY="60.0" text="Выбрать город" textFill="#74aab0">
-               <font>
-                  <Font name="Calibri" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="341.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="4 м/с" textFill="#336e89">
+            <ComboBox fx:id="spisokV" layoutX="-7.0" layoutY="51.0" onAction="#onHelloButtonClick" prefHeight="35.0" prefWidth="189.0" promptText="Выбрать город..." style="-fx-background-color: D8EFF2;" styleClass="button" stylesheets="@../../../../../FX/src/main/resources/com/example/fx/style.css" />
+            <Label fx:id="Veter" layoutX="341.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="418.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="ветер" textFill="#336e89">
+            <Label layoutX="362.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="м/с    ветер" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="682.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="63%" textFill="#336e89">
+            <Label fx:id="Vlagn" layoutX="682.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="759.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="влажность" textFill="#336e89">
+            <Label layoutX="718.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="\%   влажность" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -258,54 +254,18 @@
                   </Shadow>
                </effect>
             </Line>
-            <Line endX="-12.0" endY="-19.000015258789062" layoutX="250.0" layoutY="388.0" startX="677.6307373046875" startY="-20.998443603515625" stroke="#397a9766" strokeWidth="11.0" />
+            <Line endX="-12.0" endY="-19.000015258789062" layoutX="250.0" layoutY="388.0" startX="677.6307373046875" startY="-20.998443603515625" stroke="#397a9680" strokeWidth="11.0" />
             <Group layoutX="232.0" layoutY="368.0">
                <children>
-                  <Ellipse fill="#75a3b8" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="702.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="613.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="532.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="451.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="362.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="275.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="184.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fill="#75a3b8" layoutX="91.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Ellipse>
+                  <Button layoutX="-24.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="69.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="162.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="253.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="340.0" layoutY="-20.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="429.0" layoutY="-20.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="510.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="591.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
+                  <Button layoutX="680.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
                </children>
             </Group>
             <Label layoutX="215.0" layoutY="404.0" style="-fx-background-color: 336E89;" text="00:00" textFill="#336e89">
@@ -479,6 +439,16 @@
                   </LinearGradient>
                </stroke>
             </Rectangle>
+            <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="672.0" layoutY="142.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Moon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="664.0" layoutY="107.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sun2.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

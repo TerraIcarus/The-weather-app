@@ -24,29 +24,30 @@ public class HelloController implements Initializable {
         textCity.setText(s);
     }
 
-    /* С ним и без него работает
+    /* С ним и без него работает*/
     @FXML
-    private TextField textInput;*/
+    private TextField textInput;
 
-   /* public HelloController() {
-    }*/
+    public HelloController() {
+    }
 
+    //список городов
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
         spisokV.setItems(FXCollections.observableArrayList("Москва", "Санкт-Петербург", "Нижний Новгород", "Владимир", "Владивосток"));
     }
 
-  /* С ним и без него работает
+  /* С ним и без него работает*/
     @FXML
     void getComboBoxInfo(ActionEvent event){
         System.out.println(spisokV.getValue());
-    }*/
+    }
 
-    @FXML
+   /* @FXML
     private Label welcomeText;
 
     @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    }*/
 }
