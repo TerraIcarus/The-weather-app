@@ -15,5 +15,14 @@ public class HelloApplication extends Application {
             stage.setTitle("Погода");
             stage.setScene(scene);
             stage.show();
-}
+    }
+    public static void main(String[] args) {
+        Weather weather = new Weather();
+        weather.weatherNow();
+        weather.wind();
+        weather.weekTemperature();
+        weather.weekDays();
+        weather.weekDate();
+        launch();
+    }
 }
