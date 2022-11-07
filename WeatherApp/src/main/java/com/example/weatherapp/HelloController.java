@@ -43,11 +43,5 @@ public class HelloController implements Initializable {
         System.out.println(spisokV.getValue());
     }
 
-   /* @FXML
-    private Label welcomeText;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }*/
 }

@@ -1,6 +1,7 @@
 .window{
-    -fx-background-radius: 50px 100px 50px 0px;
-   /* -fx-border-radius: 50px 50px 50px 0px;*/
+    -fx-background-image: url(bob2.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 187px 226px;
 }
 
 .button{
@@ -9,4 +10,10 @@
 }
 .button:hover{
 -fx-background-color : #5dcbed;
+}
+
+vs_wind{
+-fx-background-image: url(bob2.png);
+-fx-background-repeat: no-repeat;
+-fx-background-size: 187px 226px;
 }
