@@ -20,9 +20,32 @@ public class HelloApplication extends Application {
         Weather weather = new Weather();
         weather.weatherNow();
         weather.wind();
-        weather.weekTemperature();
-        weather.weekDays();
-        weather.weekDate();
+
+        weather.weekTemperature1();
+        weather.weekTemperature2();
+        weather.weekTemperature3();
+        weather.weekTemperature4();
+        weather.weekTemperature5();
+        weather.weekTemperature6();
+        weather.weekTemperature7();
+
+       weather.weekDays1();
+       weather.weekDays2();
+       weather.weekDays3();
+       weather.weekDays4();
+       weather.weekDays5();
+       weather.weekDays6();
+       weather.weekDays7();
+
+       weather.weekDate1();
+       weather.weekDate2();
+       weather.weekDate3();
+       weather.weekDate4();
+       weather.weekDate5();
+       weather.weekDate6();
+       weather.weekDate7();
+
+
         launch();
     }
 }
