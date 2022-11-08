@@ -224,7 +224,6 @@ public class HelloController implements Initializable {
         textCity.setText(s);
     }
 
-    /* С ним и без него работает*/
     @FXML
     private TextField textInput;
 
@@ -237,51 +236,54 @@ public class HelloController implements Initializable {
 
         //температура ДНЕМ на всю НЕДЕЛЮ
         spisokV.setItems(FXCollections.observableArrayList("Москва", "Санкт-Петербург", "Нижний Новгород", "Владимир", "Владивосток"));
-        Temp_Den_bud1.setText(Weather.weekTemperature1().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud1);
-        Temp_Den_bud2.setText(Weather.weekTemperature2().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud2);
-        Temp_Den_bud3.setText(Weather.weekTemperature3().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud3);
-        Temp_Den_bud4.setText(Weather.weekTemperature4().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud4);
-        Temp_Den_bud5.setText(Weather.weekTemperature5().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud5);
-        Temp_Den_bud6.setText(Weather.weekTemperature6().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud6);
-        Temp_Den_bud7.setText(Weather.weekTemperature7().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temp_Den_bud7);
+        Temp_Den_bud1.setText(Weather.weekTemperature1());
+        Temp_Den_bud2.setText(Weather.weekTemperature2());
+        Temp_Den_bud3.setText(Weather.weekTemperature3());
+        Temp_Den_bud4.setText(Weather.weekTemperature4());
+        Temp_Den_bud5.setText(Weather.weekTemperature5());
+        Temp_Den_bud6.setText(Weather.weekTemperature6());
+        Temp_Den_bud7.setText(Weather.weekTemperature7());
 
+        //температура НОЧЬЮ на всю НЕДЕЛЮ
+        Temp_Nigt_bud1.setText(Weather.weekTemperatureNIGHT1());
+        Temp_Nigt_bud2.setText(Weather.weekTemperatureNIGHT2());
+        Temp_Nigt_bud3.setText(Weather.weekTemperatureNIGHT3());
+        Temp_Nigt_bud4.setText(Weather.weekTemperatureNIGHT4());
+        Temp_Nigt_bud5.setText(Weather.weekTemperatureNIGHT5());
+        Temp_Nigt_bud6.setText(Weather.weekTemperatureNIGHT6());
+        Temp_Nigt_bud7.setText(Weather.weekTemperatureNIGHT7());
 
         //изменене ДАТЫ на всю НЕДЕЛЮ
-        d1.setText(Weather.weekDate1().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d1);
-        d2.setText(Weather.weekDate2().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d2);
-        d3.setText(Weather.weekDate3().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d3);
-        d4.setText(Weather.weekDate4().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d4);
-        d5.setText(Weather.weekDate5().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d5);
-        d6.setText(Weather.weekDate6().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d6);
-        d7.setText(Weather.weekDate7().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
-        System.out.println(d7);
+        d1.setText(Weather.weekDate1());
+        d2.setText(Weather.weekDate2());
+        d3.setText(Weather.weekDate3());
+        d4.setText(Weather.weekDate4());
+        d5.setText(Weather.weekDate5());
+        d6.setText(Weather.weekDate6());
+        d7.setText(Weather.weekDate7());
+
+        //изменение ВЛАЖНОСТИ на всю НЕДЕЛЮ
+        Vlagn_bud1.setText(Weather.weekRain1());
+        Vlagn_bud2.setText(Weather.weekRain2());
+        Vlagn_bud3.setText(Weather.weekRain3());
+        Vlagn_bud4.setText(Weather.weekRain4());
+        Vlagn_bud5.setText(Weather.weekRain5());
+        Vlagn_bud6.setText(Weather.weekRain6());
+        Vlagn_bud7.setText(Weather.weekRain7());
+
 
 
         //данные на СЕГОДНЯ температура текущ.
-        Temper_Tek.setText(Weather.weatherNow().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Temper_Tek);
+        Temper_Tek.setText(Weather.weatherNow());
+
         //данные на СЕГОДНЯ ветер
-        Veter.setText(Weather.wind().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
-        System.out.println(Veter);
+        Veter.setText(Weather.wind());
+
 
 
 
     }
 
-  /* С ним и без него работает*/
     @FXML
     void getComboBoxInfo(ActionEvent event){
         System.out.println(spisokV.getValue());

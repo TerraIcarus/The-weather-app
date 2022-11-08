@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
     }
     public static void main(String[] args) {
         Weather weather = new Weather();
-        /*//weather.weatherNow();
+        /*weather.weatherNow();
         weather.wind();*/
 
        // weather.weekTemperature1();
