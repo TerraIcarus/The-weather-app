@@ -6,9 +6,11 @@ import org.jsoup.select.Elements;
 
 public class Weather {
    // private String URL; сменить со владимира на др города
+    public static Element weekTemperature;
+    public static Elements element;
 
 
-    public String weatherNow(){
+    public static String weatherNow(){
         try
         {
             Document document = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/now/")
@@ -46,23 +48,27 @@ public class Weather {
         return null;
     }
 
-    public String weekTemperature1(){
+    public static  String weekTemperature1(){
         try
         {
             Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.selectFirst("span.AY6t");
-            for (Element element : weekTemperature.select("span")){
-                System.out.println(element.text());}
+            weekTemperature = docOne.selectFirst("span.AY6t");
+
+            element = weekTemperature.select("span");
+
+                System.out.println(element.text());
+
         }
+
 
         catch (Exception e)
         {
 
         }
-        return null;
+        return element.toString();
     }
 
     public String weekTemperature2(){
