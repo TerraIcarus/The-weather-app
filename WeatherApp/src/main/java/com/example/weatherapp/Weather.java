@@ -6,18 +6,38 @@ import org.jsoup.select.Elements;
 
 public class Weather {
    // private String URL; сменить со владимира на др города
+   static String URLnow ="https://www.gismeteo.ru/weather-vladimir-4350/now/";
+   static String URLweek ="https://www.gismeteo.ru/weather-vladimir-4350/10-days/";
 
     public static String weatherNow(){
         String elm =null;
         try
         {
-            Document document = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/now/")
+            Document document = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weatherNow = document.selectFirst("div.maxt>span.unit.unit_temperature_c");
+            for (Element element : weatherNow.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+    public static String weatherDay(){
+        String elm =null;
+        try
+        {
+            Document document = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
 
-            Elements weatherNow = document.select("div.HhSR.GyfK");
-            for (Element element : weatherNow.select("div")){
+            Element weatherNow = document.selectFirst("div.maxt>span.unit.unit_temperature_c");
+            for (Element element : weatherNow.select("span")){
                 elm = element.text();
 
             }
@@ -27,73 +47,78 @@ public class Weather {
         return elm;
     }
 
+    public static String weatherNight(){
+        String elm =null;
+        try
+        {
+            Document document = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weatherNow = document.selectFirst("div.mint>span.unit.unit_temperature_c");
+            for (Element element : weatherNow.select("span")){
+                elm = element.text();
+            }
+        } catch (Exception e) {
+        }
+        return elm;
+    }
     public static String wind(){
         String elm =null;
         try
         {
-            Document document = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/now/")
+            Document document = Jsoup.connect(URLnow)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-
-            Element wind = document.select("span.VaOz.d2qU").get(1);
-            for (Element element : wind.select("span")){
+            Element wind = document.select("div.now-info-item.wind > div.item-value> div.unit").get(0);
+            for (Element element : wind.select("div")){
                 elm = element.text();
-
             }
         } catch (Exception e) {
-
         }
         return elm;
     }
-
     public static  String weekTemperature1(){
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.selectFirst("span.AY6t");
-
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(1);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
-
             }
         } catch (Exception e) {
-
         }
         return elm;
     }
-
     public static String weekTemperature2() {
         String elm = null;
         try {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(1);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(2);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
-
             }
         } catch (Exception e) {
-
         }
         return elm;
     }
-
     public static String weekTemperature3(){
         String elm = null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(2);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(3);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
 
@@ -108,11 +133,11 @@ public class Weather {
         String elm = null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(3);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(4);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
 
@@ -127,11 +152,11 @@ public class Weather {
         String elm = null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(4);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(5);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
 
@@ -146,11 +171,11 @@ public class Weather {
         String elm = null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(5);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(6);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
 
@@ -165,11 +190,11 @@ public class Weather {
         String elm = null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.AY6t").get(6);
+            Element weekTemperature = docOne.select("div.maxt>span.unit.unit_temperature_c").get(7);
             for (Element element : weekTemperature.select("span")) {
                 elm = element.text();
 
@@ -180,161 +205,16 @@ public class Weather {
         return elm;
     }
 
-
-
-
-
-
-    public static String weekDays1(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.selectFirst("span.B3rb");
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays2(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(1);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays3(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(2);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays4(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(3);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays5(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(4);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays6(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(5);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-    public static String weekDays7(){
-        String elm =null;
-        try
-        {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
-                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
-                    .referrer("http://www.google.com")
-                    .get();
-            Element weekDays = docOne.select("span.B3rb").get(6);
-            for (Element element : weekDays.select("span")){
-                elm = element.text();
-
-            }
-        } catch (Exception e) {
-
-        }
-        return elm;
-    }
-
-
-
-
-
-
-
-
     public static String weekDate1(){
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.selectFirst("span.PADa");
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(1);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -348,12 +228,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(1);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(2);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -367,12 +247,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(2);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(3);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -386,12 +266,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(3);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(4);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -405,12 +285,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(4);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(5);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -424,12 +304,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(5);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(6);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -443,12 +323,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekDate = docOne.select("span.PADa").get(6);
-            for (Element element : weekDate.select("span")){
+            Element weekDate = docOne.select("div.widget-row.widget-row-days-date>a.row-item").get(7);
+            for (Element element : weekDate.select("div")){
                 elm = element.text();
 
             }
@@ -462,12 +342,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.selectFirst("span.F5CX");
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(1);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -481,12 +361,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(1);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(2);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -500,12 +380,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(2);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(3);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -519,12 +399,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(3);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(4);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -538,12 +418,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(4);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(5);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -557,12 +437,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(5);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(6);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -576,12 +456,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.F5CX").get(6);
-            for (Element element : weekTemperature.select("span")){
+            Element weekTemperature = docOne.select("div.widget-row.widget-row-humidity>div.row-item").get(7);
+            for (Element element : weekTemperature.select("div")){
                 elm = element.text();
 
             }
@@ -595,11 +475,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.selectFirst("span.wVqS");
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(1);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -614,11 +494,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(1);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(2);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -633,11 +513,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(2);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(3);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -652,11 +532,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(3);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(4);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -671,11 +551,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(4);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(5);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -690,11 +570,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(5);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(6);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -709,11 +589,11 @@ public class Weather {
         String elm =null;
         try
         {
-            Document docOne = Jsoup.connect("https://weather.rambler.ru/vo-vladimire/")
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element weekTemperature = docOne.select("span.wVqS").get(6);
+            Element weekTemperature = docOne.select("div.mint>span.unit.unit_temperature_c").get(7);
             for (Element element : weekTemperature.select("span")){
                 elm = element.text();
 
@@ -723,5 +603,140 @@ public class Weather {
         }
         return elm;
     }
+
+
+    public static String weekWind1(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(1);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind2(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(2);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind3(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(3);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind4(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(4);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind5(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(5);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind6(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(6);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
+    public static String weekWind7(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URLweek)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.select("span.wind-unit.unit.unit_wind_m_s").get(7);
+            for (Element element : weekTemperature.select("span")){
+                elm = element.text();
+
+            }
+        } catch (Exception e) {
+
+        }
+        return elm;
+    }
+
 
 }

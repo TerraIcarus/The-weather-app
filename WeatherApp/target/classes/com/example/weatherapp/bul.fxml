@@ -183,7 +183,7 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <Label fx:id="Data_Tek" layoutX="701.0" layoutY="41.0" text="27.10">
+            <Label fx:id="Data_Tek" layoutX="701.0" layoutY="41.0" text="27 ноября">
                <textFill>
                   <LinearGradient endX="1.0" endY="0.5165876777251185" startX="1.0" startY="0.8909952606635071">
                      <stops>
@@ -209,7 +209,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="Temper_Tek" layoutX="534.0" layoutY="103.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temper_Tek" layoutX="534.0" layoutY="103.0" text="." textFill="#336e89">
                <font>
                   <Font name="Arial" size="60.0" />
                </font>
@@ -226,7 +226,7 @@
                </font>
             </Label>
             <ComboBox fx:id="spisokV" layoutX="-7.0" layoutY="51.0" onAction="#onHelloButtonClick" prefHeight="35.0" prefWidth="189.0" promptText="Выбрать город..." style="-fx-background-color: D8EFF2;" />
-            <Label fx:id="Veter" layoutX="341.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+            <Label fx:id="Veter" alignment="CENTER_RIGHT" layoutX="312.0" layoutY="202.0" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -236,12 +236,12 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn" layoutX="682.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+            <Label fx:id="Vlagn" alignment="CENTER_RIGHT" layoutX="660.0" layoutY="202.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="718.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="\%   влажность" textFill="#336e89">
+            <Label layoutX="743.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -504,7 +504,7 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud1" layoutX="26.0" layoutY="508.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud1" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="508.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -514,7 +514,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud1" layoutX="81.0" layoutY="506.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud1" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="506.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -534,12 +534,12 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud1" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="557.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+            <Label fx:id="Vlagn_bud1" layoutX="19.0" layoutY="557.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="30.0" layoutY="554.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+            <Label layoutX="59.0" layoutY="555.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -549,7 +549,7 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud2" layoutX="200.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud2" alignment="CENTER_RIGHT" layoutX="187.0" layoutY="507.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -559,7 +559,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud2" layoutX="255.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud2" alignment="CENTER_RIGHT" layoutX="242.0" layoutY="506.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -579,12 +579,7 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud2" alignment="CENTER_RIGHT" layoutX="188.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="204.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+            <Label layoutX="236.0" layoutY="553.0" prefHeight="21.0" prefWidth="89.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -594,7 +589,7 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud3" layoutX="386.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud3" alignment="CENTER_RIGHT" layoutX="372.0" layoutY="507.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -604,7 +599,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud3" layoutX="441.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud3" alignment="CENTER_RIGHT" layoutX="427.0" layoutY="506.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -624,12 +619,7 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud3" alignment="CENTER_RIGHT" layoutX="372.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="390.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+            <Label layoutX="421.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -639,7 +629,7 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud4" layoutX="567.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud4" alignment="CENTER_RIGHT" layoutX="554.0" layoutY="507.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -649,7 +639,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud4" layoutX="622.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud4" alignment="CENTER_RIGHT" layoutX="608.0" layoutY="506.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -669,12 +659,7 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud4" alignment="CENTER_RIGHT" layoutX="553.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="571.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+            <Label layoutX="602.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -684,7 +669,7 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud5" layoutX="748.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud5" alignment="CENTER_RIGHT" layoutX="734.0" layoutY="507.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -694,7 +679,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud5" layoutX="803.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud5" alignment="CENTER_RIGHT" layoutX="789.0" layoutY="506.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -714,22 +699,12 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud5" alignment="CENTER_RIGHT" layoutX="734.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="752.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
             <Label fx:id="d6" layoutX="923.0" layoutY="481.0" prefHeight="17.0" prefWidth="89.0" text="28 ноября" textFill="#3f67b2">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud6" layoutX="935.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud6" alignment="CENTER_RIGHT" layoutX="911.0" layoutY="507.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -739,7 +714,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud6" layoutX="990.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud6" alignment="CENTER_RIGHT" layoutX="969.0" layoutY="506.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -759,22 +734,12 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud6" alignment="CENTER_RIGHT" layoutX="921.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="939.0" layoutY="553.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Label>
             <Label fx:id="d7" layoutX="1102.0" layoutY="481.0" prefHeight="17.0" prefWidth="89.0" text="28 ноября" textFill="#3f67b2">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Temp_Den_bud7" layoutX="1114.0" layoutY="507.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Den_bud7" alignment="CENTER_RIGHT" layoutX="1100.0" layoutY="507.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -784,7 +749,7 @@
                   <Image url="@sun2.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="Temp_Nigt_bud7" layoutX="1169.0" layoutY="505.0" text="4°" textFill="#336e89">
+            <Label fx:id="Temp_Nigt_bud7" alignment="CENTER_RIGHT" layoutX="1151.0" layoutY="506.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -804,12 +769,47 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="Vlagn_bud7" alignment="CENTER_RIGHT" layoutX="1100.0" layoutY="556.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+            <Label fx:id="Vlagn_bud2" layoutX="195.0" layoutY="558.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="1118.0" layoutY="553.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+            <Label fx:id="Vlagn_bud3" layoutX="380.0" layoutY="557.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Vlagn_bud4" layoutX="561.0" layoutY="558.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="785.0" layoutY="553.0" prefHeight="21.0" prefWidth="85.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Vlagn_bud5" layoutX="744.0" layoutY="558.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="972.0" layoutY="553.0" prefHeight="21.0" prefWidth="85.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Vlagn_bud6" layoutX="931.0" layoutY="558.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="1151.0" layoutY="553.0" prefHeight="21.0" prefWidth="85.0" style="-fx-background-color: 336E89;" text="в. осадков" textFill="#336e89">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Vlagn_bud7" layoutX="1110.0" layoutY="558.0" prefHeight="16.0" prefWidth="36.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
