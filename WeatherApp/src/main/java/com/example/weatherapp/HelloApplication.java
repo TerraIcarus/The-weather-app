@@ -18,11 +18,11 @@ public class HelloApplication extends Application {
     }
     public static void main(String[] args) {
         Weather weather = new Weather();
-        //weather.weatherNow();
-        weather.wind();
+        /*//weather.weatherNow();
+        weather.wind();*/
 
        // weather.weekTemperature1();
-        weather.weekTemperature2();
+        /*weather.weekTemperature2();
         weather.weekTemperature3();
         weather.weekTemperature4();
         weather.weekTemperature5();
@@ -43,7 +43,25 @@ public class HelloApplication extends Application {
        weather.weekDate4();
        weather.weekDate5();
        weather.weekDate6();
-       weather.weekDate7();
+       weather.weekDate7();*/
+
+        weather.weekRain1();
+        weather.weekRain2();
+        weather.weekRain3();
+        weather.weekRain4();
+        weather.weekRain5();
+        weather.weekRain6();
+        weather.weekRain7();
+
+
+        weather.weekTemperatureNIGHT1();
+        weather.weekTemperatureNIGHT2();
+        weather.weekTemperatureNIGHT3();
+        weather.weekTemperatureNIGHT4();
+        weather.weekTemperatureNIGHT5();
+        weather.weekTemperatureNIGHT6();
+        weather.weekTemperatureNIGHT7();
+
 
 
         launch();
