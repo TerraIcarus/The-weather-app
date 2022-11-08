@@ -234,9 +234,51 @@ public class HelloController implements Initializable {
     //список городов
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
+
+        //температура ДНЕМ на всю НЕДЕЛЮ
         spisokV.setItems(FXCollections.observableArrayList("Москва", "Санкт-Петербург", "Нижний Новгород", "Владимир", "Владивосток"));
         Temp_Den_bud1.setText(Weather.weekTemperature1().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
         System.out.println(Temp_Den_bud1);
+        Temp_Den_bud2.setText(Weather.weekTemperature2().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud2);
+        Temp_Den_bud3.setText(Weather.weekTemperature3().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud3);
+        Temp_Den_bud4.setText(Weather.weekTemperature4().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud4);
+        Temp_Den_bud5.setText(Weather.weekTemperature5().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud5);
+        Temp_Den_bud6.setText(Weather.weekTemperature6().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud6);
+        Temp_Den_bud7.setText(Weather.weekTemperature7().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temp_Den_bud7);
+
+
+        //изменене ДАТЫ на всю НЕДЕЛЮ
+        d1.setText(Weather.weekDate1().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d1);
+        d2.setText(Weather.weekDate2().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d2);
+        d3.setText(Weather.weekDate3().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d3);
+        d4.setText(Weather.weekDate4().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d4);
+        d5.setText(Weather.weekDate5().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d5);
+        d6.setText(Weather.weekDate6().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d6);
+        d7.setText(Weather.weekDate7().replaceAll("[u0000-u002fu003a-u003f]", " ").replaceAll(" +", " "));
+        System.out.println(d7);
+
+
+        //данные на СЕГОДНЯ температура текущ.
+        Temper_Tek.setText(Weather.weatherNow().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Temper_Tek);
+        //данные на СЕГОДНЯ ветер
+        Veter.setText(Weather.wind().replaceAll("[^0-9°]", " ").replaceAll(" +", " "));
+        System.out.println(Veter);
+
+
+
     }
 
   /* С ним и без него работает*/
