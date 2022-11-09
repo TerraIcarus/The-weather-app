@@ -22,6 +22,8 @@ public class HelloApplication extends Application {
         weather.weatherNight();
         weather.wind();
 
+        weather.DateToday();
+
         weather.weekWind1();
         weather.weekWind2();
         weather.weekWind3();
@@ -29,6 +31,33 @@ public class HelloApplication extends Application {
         weather.weekWind5();
         weather.weekWind6();
         weather.weekWind7();
+
+        weather.TodayTemp1();
+        weather.TodayTemp2();
+        weather.TodayTemp3();
+        weather.TodayTemp4();
+        weather.TodayTemp5();
+        weather.TodayTemp6();
+        weather.TodayTemp7();
+        weather.TodayTemp8();
+
+        weather.TodayWind1();
+        weather.TodayWind2();
+        weather.TodayWind3();
+        weather.TodayWind4();
+        weather.TodayWind5();
+        weather.TodayWind6();
+        weather.TodayWind7();
+        weather.TodayWind8();
+
+        weather.TodayRain1();
+        weather.TodayRain2();
+        weather.TodayRain3();
+        weather.TodayRain4();
+        weather.TodayRain5();
+        weather.TodayRain6();
+        weather.TodayRain7();
+        weather.TodayRain8();
 
         launch();
     }
