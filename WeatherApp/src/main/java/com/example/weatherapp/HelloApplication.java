@@ -20,8 +20,7 @@ public class HelloApplication extends Application {
         Weather weather = new Weather();
        // weather.weatherDay();
        // weather.weatherNight();
-        weather.wind();
-        weather.Rain();
+       /* weather.wind();
 
         weather.DateToday();
 
@@ -31,7 +30,7 @@ public class HelloApplication extends Application {
         weather.weekWind4();
         weather.weekWind5();
         weather.weekWind6();
-        weather.weekWind7();
+        weather.weekWind7();*/
 
         weather.TodayTemp1();
         weather.TodayTemp2();
