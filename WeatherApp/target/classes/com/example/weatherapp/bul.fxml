@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.Group?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,7 +9,6 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -55,82 +50,6 @@
                   </LinearGradient>
                </fill>
             </Rectangle>
-            <Group layoutX="223.0" layoutY="368.0">
-               <children>
-                  <Ellipse fill="#77a4b866" layoutX="9.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="711.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="622.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="541.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="460.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="371.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="284.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="193.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fill="#76a4b866" layoutX="100.0" layoutY="9.0" radiusX="22.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                     <effect>
-                        <Shadow />
-                     </effect>
-                  </Ellipse>
-               </children>
-            </Group>
             <Label layoutX="15.0" layoutY="13.0" text="Погода сегодня">
                <textFill>
                   <LinearGradient endX="1.0" startX="1.0" startY="1.0">
@@ -244,74 +163,6 @@
             <Label layoutX="732.0" layoutY="202.0" style="-fx-background-color: 336E89;" text="\%  в. осадков" textFill="#336e89">
                <font>
                   <Font name="Arial" size="25.0" />
-               </font>
-            </Label>
-            <Line endX="-22.0" endY="-24.000030517578125" layoutX="260.0" layoutY="398.0" startX="674.6666259765625" startY="-24.000030517578125" stroke="#397a96b7" strokeWidth="11.0">
-               <effect>
-                  <Shadow>
-                     <color>
-                        <Color opacity="0.4000000059604645" />
-                     </color>
-                  </Shadow>
-               </effect>
-            </Line>
-            <Line endX="-12.0" endY="-19.000015258789062" layoutX="250.0" layoutY="388.0" startX="677.6307373046875" startY="-20.998443603515625" stroke="#397a9680" strokeWidth="11.0" />
-            <Group layoutX="232.0" layoutY="368.0">
-               <children>
-                  <Button layoutX="-24.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="69.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="162.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="253.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="340.0" layoutY="-20.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="429.0" layoutY="-20.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="510.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="591.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-                  <Button layoutX="680.0" layoutY="-19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="45.0" />
-               </children>
-            </Group>
-            <Label layoutX="215.0" layoutY="404.0" style="-fx-background-color: 336E89;" text="00:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="305.0" layoutY="322.0" style="-fx-background-color: 336E89;" text="03:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="400.0" layoutY="404.0" style="-fx-background-color: 336E89;" text="06:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="492.0" layoutY="322.0" style="-fx-background-color: 336E89;" text="09:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="574.0" layoutY="404.0" style="-fx-background-color: 336E89;" text="12:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="664.0" layoutY="322.0" style="-fx-background-color: 336E89;" text="15:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="744.0" layoutY="412.0" style="-fx-background-color: 336E89;" text="18:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="917.0" layoutY="412.0" style="-fx-background-color: 336E89;" text="23:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="830.0" layoutY="322.0" style="-fx-background-color: 336E89;" text="21:00" textFill="#336e89">
-               <font>
-                  <Font name="Arial" size="14.0" />
                </font>
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6cbed" height="114.0" layoutY="473.0" strokeType="INSIDE" strokeWidth="4.0" styleClass="window" width="153.0">
@@ -440,51 +291,51 @@
                   </LinearGradient>
                </stroke>
             </Rectangle>
-            <Pane layoutX="960.0" layoutY="113.0" maxHeight="226.0" maxWidth="187.0" minHeight="226.0" minWidth="187.0" prefHeight="226.0" prefWidth="187.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+            <Pane layoutX="72.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
                <children>
-                  <Label fx:id="time_bud" layoutX="72.0" layoutY="6.0" prefHeight="20.0" prefWidth="43.0" text="23:00" textFill="#336e89">
+                  <Label fx:id="time_bud" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="00:00" textFill="#336e89">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="Temp_Den_bud" layoutX="47.0" layoutY="50.0" text="4°" textFill="#336e89">
+                  <Label fx:id="TempDen00" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="20.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="66.0" layoutY="47.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@sun2.jpg" />
                      </image>
                   </ImageView>
-                  <Label fx:id="Temp_Nigt_bud" layoutX="102.0" layoutY="48.0" text="4°" textFill="#336e89">
+                  <Label fx:id="Temp_Nigt_bud" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="20.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="126.0" layoutY="48.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@moon%20black.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="Veter_bud" alignment="CENTER_RIGHT" layoutX="22.0" layoutY="132.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                  <Label fx:id="Veter_bud" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="79.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="18.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="46.0" layoutY="132.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                  <Label layoutX="27.0" layoutY="81.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="18.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="Vlagn_bud" alignment="CENTER_RIGHT" layoutX="22.0" layoutY="159.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                  <Label fx:id="Vlagn_bud" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="102.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="18.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="44.0" layoutY="159.0" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: 336E89;" text=" %    влажность" textFill="#336e89">
+                  <Label layoutX="23.0" layoutY="99.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
                      <font>
-                        <Font name="Arial Bold" size="18.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Label>
                </children>
@@ -814,6 +665,349 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
+            <Pane layoutX="212.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud3" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="03:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_03" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud10" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud10" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud10" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="350.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud31" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="06:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_06" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud101" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud101" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud101" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="488.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud1" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="09:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_09" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud8" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud8" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud8" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="628.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud32" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="12:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_12" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud102" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud102" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud102" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="766.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud311" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="15:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_15" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud1011" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud1011" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud1011" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="902.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud321" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="18:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_18" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud1021" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud1021" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud1021" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1040.0" layoutY="280.0" maxHeight="239.0" maxWidth="187.0" minHeight="134.0" minWidth="108.0" prefHeight="134.0" prefWidth="131.0" style="-fx-background-color: ffffff;" styleClass="window" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="time_bud3111" layoutX="50.0" layoutY="5.0" prefHeight="20.0" prefWidth="43.0" text="21:00" textFill="#336e89">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Temp_Den_21" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="37.0" prefHeight="16.0" prefWidth="28.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="38.0" layoutY="32.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Temp_Nigt_bud10111" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="37.0" prefHeight="16.0" prefWidth="36.0" text="4°" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="98.0" layoutY="33.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@moon%20black.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Veter_bud10111" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="78.0" prefHeight="21.0" prefWidth="20.0" style="-fx-background-color: 336E89;" text="4" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="80.0" style="-fx-background-color: 336E89;" text="м/с  ветер" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Vlagn_bud10111" alignment="CENTER_RIGHT" layoutX="-3.0" layoutY="101.0" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: 336E89;" text="63" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" style="-fx-background-color: 336E89;" text=" %   влажность" textFill="#336e89">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </AnchorPane>
    </children>

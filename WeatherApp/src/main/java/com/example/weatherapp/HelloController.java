@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
 
-    @FXML
+   /* @FXML
     private ResourceBundle resources;
 
     @FXML
@@ -216,7 +216,9 @@ public class HelloController implements Initializable {
     private Label textCity;
 
     @FXML
-    private Label time_bud;
+    private Label time_bud;*/
+
+
 
     @FXML //изменение названия города
     void onHelloButtonClick(ActionEvent event) {
@@ -279,6 +281,9 @@ public class HelloController implements Initializable {
         Veter_bud5.setText(Weather.weekWind5());
         Veter_bud6.setText(Weather.weekWind6());
         Veter_bud7.setText(Weather.weekWind7());
+
+        //изменение ТЕМПЕРАТУРЫ на 00:00 - 21:00
+        Temp_Den00.setText(Weather.TodayTemp1());
 
 
 

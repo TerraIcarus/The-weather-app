@@ -2,6 +2,7 @@
     -fx-background-image: url(bob2.png);
     -fx-background-repeat: no-repeat;
     -fx-background-size: 187px 226px;
+    -fx-background-position: center center;
 }
 
 .button{
@@ -15,5 +16,5 @@
 vs_wind{
 -fx-background-image: url(bob2.png);
 -fx-background-repeat: no-repeat;
--fx-background-size: 187px 226px;
+-fx-background-size: 108px 134px;
 }
