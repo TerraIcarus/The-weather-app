@@ -86,12 +86,12 @@ public class Weather {
         String elm =null;
         try
         {
-            Document document = Jsoup.connect(URLnow)
+            Document docOne = Jsoup.connect(URLweek)
                     .userAgent("Chrome/106.0.0.0 Safari/537.36")
                     .referrer("http://www.google.com")
                     .get();
-            Element wind = document.select("div.now-info-item.wind > div.item-value> div.unit").get(0);
-            for (Element element : wind.select("div")){
+            Element weekTemperature = docOne.selectFirst("div.widget-row.widget-row-wind-speed>div.row-item> span.wind-unit.unit.unit_wind_m_s");
+            for (Element element : weekTemperature.select("span")){
                 elm = element.text();
             }
         } catch (Exception e) {

@@ -18,8 +18,8 @@ public class HelloApplication extends Application {
     }
     public static void main(String[] args) {
         Weather weather = new Weather();
-        weather.weatherDay();
-        weather.weatherNight();
+       // weather.weatherDay();
+       // weather.weatherNight();
         weather.wind();
 
         weather.DateToday();
