@@ -1167,4 +1167,21 @@ public class Weather {
         return elm;
     }
 
+    public static String Rain(){
+        String elm =null;
+        try
+        {
+            Document docOne = Jsoup.connect(URL)
+                    .userAgent("Chrome/106.0.0.0 Safari/537.36")
+                    .referrer("http://www.google.com")
+                    .get();
+            Element weekTemperature = docOne.selectFirst("div.widget-row.widget-row-humidity> div.row-item");
+            for (Element element : weekTemperature.select("div")){
+                elm = element.text();
+            }
+        } catch (Exception e) {
+        }
+        return elm;
+    }
+
 }

@@ -21,6 +21,7 @@ public class HelloApplication extends Application {
        // weather.weatherDay();
        // weather.weatherNight();
         weather.wind();
+        weather.Rain();
 
         weather.DateToday();
 
