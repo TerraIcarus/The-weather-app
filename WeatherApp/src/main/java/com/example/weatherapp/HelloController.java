@@ -271,17 +271,33 @@ public class HelloController implements Initializable {
         Vlagn_bud6.setText(Weather.weekRain6());
         Vlagn_bud7.setText(Weather.weekRain7());
 
+        //изменение ВЕТРА на всю НЕДЕЛЮ
+        Veter_bud1.setText(Weather.weekWind1());
+        Veter_bud2.setText(Weather.weekWind2());
+        Veter_bud3.setText(Weather.weekWind3());
+        Veter_bud4.setText(Weather.weekWind4());
+        Veter_bud5.setText(Weather.weekWind5());
+        Veter_bud6.setText(Weather.weekWind6());
+        Veter_bud7.setText(Weather.weekWind7());
+
+
+
+
 
 
         //данные на СЕГОДНЯ температура текущ.
         Temper_Tek.setText(Weather.weatherNow());
-
         //данные на СЕГОДНЯ ветер
         Veter.setText(Weather.wind());
 
+        //данные на СЕГОДНЯ в.осадков
 
-
-
+        //данные на СЕГОДНЯ темп.днем
+        Temp_Den.setText(Weather.weatherDay());
+        //данные на СЕГОДНЯ темп.ночь
+        Temp_Nigt.setText(Weather.weatherNight());
+        //данные на СЕГОДНЯ дата
+        Data_Tek.setText(Weather.DateToday());
     }
 
     @FXML
